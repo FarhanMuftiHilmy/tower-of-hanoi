@@ -8,17 +8,17 @@ using namespace std;
 
 int main()
 {
-	int jumlah_disk = 5;
+	int jumlah_disk = 7;
 	
 	
 	//int A[jumlah_disk] = {1, 2, 3}; 	
-	int A[jumlah_disk] = {1, 2, 3, 4, 5};
+	int A[jumlah_disk] = {1, 2, 3, 4, 5, 6, 7};
 	int indeks_a = 0;
 	//int B[jumlah_disk] = {0, 0, 0};
-	int B[jumlah_disk] = {0, 0, 0, 0, 0};
-	int indeks_b = 0;
+	int B[jumlah_disk] = {0, 0, 0, 0, 0, 0, 0};
+	int indeks_b = 0; 
 	//int C[jumlah_disk] = {0, 0, 0};
-	int C[jumlah_disk] = {0, 0, 0, 0, 0};
+	int C[jumlah_disk] = {0, 0, 0, 0, 0, 0, 0};
 	int indeks_c = 0;
 	int temp;
 	int loop = 0;
@@ -66,10 +66,7 @@ int main()
 			if(C[i]!= 0){
 				indeks_c++;
 			}	
-			if(indeks_c == 0){
-				indeks_c = 1;
-			}			  
-				
+			
 		}
 		
 		
@@ -80,11 +77,8 @@ int main()
 			if(apop>cpop){
 				temp = A[indeks_a-1];
 				A[indeks_a-1] = 0;
-				if(indeks_c-1 == 0){
-					C[indeks_c-1] = temp;
-				}else{
-					C[indeks_c] = temp;
-				}			
+				C[indeks_c] = temp;
+						
 				
 				
 			
@@ -128,19 +122,14 @@ int main()
 		for(int i=0;i<jumlah_disk;i++){
 			if(A[i]!= 0){
 				indeks_a++;
-			} 
-			if(indeks_a == 0){
-				indeks_a = 1;
-			}		
+			} 	
 		}
 		//count indeks b
 		for(int i=0;i<jumlah_disk;i++){
 			if(B[i]!= 0){
 				indeks_b++;
 			} 
-			if(indeks_b == 0){
-				indeks_b = 1;
-			}
+		
 				
 					
 		}
@@ -150,9 +139,8 @@ int main()
 		bpop = B[indeks_b-1];
 		if(apop>bpop){
 			temp = A[indeks_a-1];
-			A[indeks_a-1] = 0;
-			indeks_a++;				
-			B[indeks_b-1] = temp;
+			A[indeks_a-1] = 0;		
+			B[indeks_b] = temp;
 		} else{
 			temp = B[indeks_b-1];
 			B[indeks_b-1] = 0;
