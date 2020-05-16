@@ -8,17 +8,17 @@ using namespace std;
 
 int main()
 {
-	int jumlah_disk = 2;
+	int jumlah_disk = 6;
 	
 	
 	//int A[jumlah_disk] = {1, 2, 3}; 	
-	int A[jumlah_disk] = {1, 2};
+	int A[jumlah_disk] = {1, 2, 3, 4, 5, 6};
 	int indeks_a = 0;
 	//int B[jumlah_disk] = {0, 0, 0};
-	int B[jumlah_disk] = {0, 0};
+	int B[jumlah_disk] = {0, 0, 0, 0, 0, 0};
 	int indeks_b = 0; 
 	//int C[jumlah_disk] = {0, 0, 0};
-	int C[jumlah_disk] = {0, 0};
+	int C[jumlah_disk] = {0, 0, 0, 0, 0, 0};
 	int indeks_c = 0;
 	int temp;
 	int loop = 0;
@@ -84,9 +84,8 @@ int main()
 			
 			} else{
 				temp = C[indeks_c-1];
-				C[indeks_c-1] = 0;
-				
-					A[indeks_a] = temp;
+				C[indeks_c-1] = 0;				
+				A[indeks_a] = temp;
 						
 			
 				
@@ -172,19 +171,14 @@ int main()
 		for(int i=0;i<jumlah_disk;i++){
 			if(B[i]!= 0){
 				indeks_b++;
-			}			
-			if(indeks_b == 0){
-				indeks_b = 1;
-			}		
+			}					
 		}
 		//count indeks c
 		for(int i=0;i<jumlah_disk;i++){
 			if(C[i]!= 0){
 				indeks_c++;
 			}
-			if(indeks_c == 0){
-				indeks_c = 1;
-			}			
+			
 		}
 		//PINDAH B KE C atau sebaliknya
 		
@@ -351,19 +345,13 @@ int main()
 		for(int i=0;i<jumlah_disk;i++){
 			if(B[i]!= 0){
 				indeks_b++;
-			}			
-			if(indeks_b == 0){
-				indeks_b = 1;
-			}		
+			}				
 		}
 		//count indeks c
 		for(int i=0;i<jumlah_disk;i++){
 			if(C[i]!= 0){
 				indeks_c++;
-			}
-			if(indeks_c == 0){
-				indeks_c = 1;
-			}			
+			}	
 		}
 		//PINDAH B KE C atau sebaliknya
 		
