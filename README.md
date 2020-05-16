@@ -16,8 +16,7 @@ repeat until complete.
 In each case, a total of 2n − 1 moves are made.
 
 I also used 1 dimensional array and numbers that represent the order of the disk for each three disk.
-A[5] = {1, 2, 3, 4, 5}
-B[5] = {0, 0, 0, 0, 0}
-C[5] = {0, 0, 0, 0, 0}
+disk[5] = {1, 2, 3, 4, 5}
+
 
 
