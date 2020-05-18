@@ -58,54 +58,35 @@ int main()
 		for(int i=0;i<jumlah_disk;i++){
 			if(A[i]!= 0){
 				indeks_a++;
-			}			
-					
+			}								
 		}
 		//count indeks c
 		for(int i=0;i<jumlah_disk;i++){
 			if(C[i]!= 0){
 				indeks_c++;
-			}	
-			
-		}
-		
-		
-		//PINDAH A KE C atau sebaliknya
-	
+			}				
+		}		
+		//PINDAH A KE C atau sebaliknya	
 			cpop = C[indeks_c-1];
 			apop = A[indeks_a-1];
 			if(apop>cpop){
 				temp = A[indeks_a-1];
 				A[indeks_a-1] = 0;
 				C[indeks_c] = temp;
-						
-				
-				
-			
 			} else{
 				temp = C[indeks_c-1];
 				C[indeks_c-1] = 0;				
-				A[indeks_a] = temp;
-						
-			
-				
-			}				
-		
-					
-		
-		
-	
+				A[indeks_a] = temp;			
+			}			
 		loop++;
 		cout << "langkah ke" << loop << endl;
 		//OUTPUT LANGKAH 1 dst
 		for(int i=0;i<jumlah_disk;i++){
 			cout << A[i] << endl;
-			
 		}
 		cout << "-----" << endl;
 		for(int i=0;i<jumlah_disk;i++){
 			cout << B[i] << endl;;
-			
 		}
 		cout << "-----" << endl;
 		for(int i=0;i<jumlah_disk;i++){
@@ -113,8 +94,7 @@ int main()
 		}
 		if(loop == n){
 			break;
-		}					
-			
+		}							
 		indeks_a = 0;	
 		indeks_c = 0;
 		//count indeks a
