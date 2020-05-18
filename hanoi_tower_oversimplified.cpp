@@ -8,17 +8,17 @@ using namespace std;
 
 int main()
 {
-	int jumlah_disk = 6;
+	int jumlah_disk = 5;
 	
 	
 	//int A[jumlah_disk] = {1, 2, 3}; 	
-	int A[jumlah_disk] = {1, 2, 3, 4, 5, 6};
+	int A[jumlah_disk] = {1, 2, 3, 4, 5};
 	int indeks_a = 0;
 	//int B[jumlah_disk] = {0, 0, 0};
-	int B[jumlah_disk] = {0, 0, 0, 0, 0, 0};
+	int B[jumlah_disk] = {0, 0, 0, 0, 0};
 	int indeks_b = 0; 
 	//int C[jumlah_disk] = {0, 0, 0};
-	int C[jumlah_disk] = {0, 0, 0, 0, 0, 0};
+	int C[jumlah_disk] = {0, 0, 0, 0, 0};
 	int indeks_c = 0;
 	int temp;
 	int loop = 0;
@@ -355,7 +355,7 @@ int main()
 		}
 		//PINDAH B KE C atau sebaliknya
 		
-		cpop = C[indeks_c-1];
+		cpop = C[indeks_c-1];	
 		bpop = B[indeks_b-1];
 		//PINDAH B KE C
 	 	if(bpop > cpop){
