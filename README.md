@@ -15,7 +15,7 @@ For an odd number of disks:
 repeat until complete.
 In each case, a total of 2n − 1 moves are made.
 
-I also used 1 dimensional array and numbers that represent the order of the disk for each three disk.
+I also used 1 dimensional array and numbers that represent the order of the disk for each tower.
 disk[5] = {1, 2, 3, 4, 5}
 
 
