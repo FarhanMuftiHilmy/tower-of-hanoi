@@ -91,11 +91,8 @@ int main()
 			C[indeks_c-1] = 0;
 			A[indeks_a] = temp;
 		}
-		
-						
-	
-	
 		loop++;
+		
 		cout << "langkah ke" << loop << endl;
 		//OUTPUT LANGKAH 1 dst
 		for(int i=0;i<jumlah_disk;i++){
