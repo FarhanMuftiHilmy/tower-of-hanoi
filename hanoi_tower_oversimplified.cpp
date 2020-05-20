@@ -52,7 +52,6 @@ int main()
 	
 	if(jumlah_disk%2 != 0){
 		while(true){
-		if(jumlah_disk%2 != 0){
 			//count indeks a
 			for(int i=0;i<jumlah_disk;i++){
 				if(A[i]!= 0){
@@ -230,7 +229,9 @@ int main()
 		
 			indeks_b = 0;
 			indeks_c = 0;
-		} else{			
+		}
+	} else{		
+		while(true){	
 			//count indeks a
 			for(int i=0;i<jumlah_disk;i++){
 				if(A[i]!= 0){
@@ -286,7 +287,7 @@ int main()
 			if(loop == n){
 				break;
 			}		
-		
+			
 			indeks_a = 0;
 			indeks_b = 0;
 			//count indeks a
@@ -409,12 +410,11 @@ int main()
 			indeks_b = 0;
 			indeks_c = 0;
 		}
-		
-			
-			
-		}
-
 	}
+		
+			
+			
+		
 	
 	
 }
